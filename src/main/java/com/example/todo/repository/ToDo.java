@@ -11,35 +11,35 @@ public class ToDo {
 
     @Id
     @GeneratedValue
-    private long id;
-    private String desciption;
-    private boolean completed;
+    private Long id;
+    private String description;
+    private Boolean completed;
 
     public ToDo() {}
 
-    public ToDo(long id, String desciption, boolean completed) {
+    public ToDo(Long id, String description, Boolean completed) {
         this.id = id;
-        this.desciption = desciption;
+        this.description = description;
         this.completed = completed;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getDesciption() {
-        return desciption;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesciption(String desciption) {
-        this.desciption = desciption;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public boolean isCompleted() {
+    public Boolean isCompleted() {
         return completed;
     }
 
